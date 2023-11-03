@@ -1,0 +1,109 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .striped-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+h1{
+  text-align: center;
+}
+
+.striped-table th,
+.striped-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.striped-table th {
+  background-color: #ccc;
+}
+
+.striped-table .odd {
+  background-color: #fff;
+}
+
+.striped-table .even {
+  background-color: #eee;
+}
+
+@media (max-width: 768px) {
+  .striped-table {
+    border: 0;
+  }
+
+  .striped-table th,
+  .striped-table td {
+    border: 0;
+  }
+
+  .striped-table th:before {
+    content: "";
+    display: block;
+    height: 20px;
+  }
+
+  .striped-table th:first-child {
+    display: none;
+  }
+
+  .striped-table td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .striped-table td:before {
+    content: attr(data-th);
+    display: block;
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+}
+    </style>
+</head>
+<body>
+  <h1>RegNo: 21bce7652</h1>
+    <table class="striped-table" border= 2px>
+        <thead>
+          <tr>
+            <th>Task Number</th>
+            <th>Repository Link</th>
+            <th>Deployment Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>React Task 1</td>
+            <td><a href="https://github.com/KaRthiK15789/REACTJS">Link</a></td>
+            <td><a href="https://reactjs-sand.vercel.app/">Link</a></td>
+          </tr>
+          <tr>
+            <td>React Task 2</td>
+            <td><a href="https://github.com/KaRthiK15789/TASK2">Link</a></td>
+            <td><a href="https://task-2-orpin-mu.vercel.app/">Link</a></td>
+          </tr>
+          <tr>
+            <td>React Task 3</td>
+            <td><a href="https://github.com/KaRthiK15789/taskk3">Link</a></td>
+            <td><a href="https://taskk3-sigma.vercel.app/">Link</a></td>
+          </tr>
+          <tr>
+            <td>React Task 4</td>
+            <td><a href="https://github.com/KaRthiK15789/task4">Link</a></td>
+            <td><a href="https://task4-zg4j.vercel.app/">Link</a></td>
+          </tr>
+          <tr class="odd">
+            <td>React Task 5</td>
+            <td><a href="https://github.com/KaRthiK15789/task5">Link</a></td>
+            <td><a href="https://task5-rosy.vercel.app/">Link</a></td>  
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
